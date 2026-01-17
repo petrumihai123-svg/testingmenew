@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FlaUI.Core" Version="5.0.0" />
+    <PackageReference Include="FlaUI.UIA3" Version="5.0.0" />    <PackageReference Include="OpenCvSharp4" Version="4.10.0.20240616" />
+  <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.10.0.20240616" />
+  <PackageReference Include="OpenCvSharp4.Extensions" Version="4.10.0.20240616" />
+</ItemGroup>
+
+  <!--
+    NOTE: For .NET 5+ you must NOT reference WinMD metadata packs like Microsoft.Windows.SDK.Contracts.
+    The Windows WinRT APIs are available by targeting a Windows TFMs, e.g. net8.0-windows10.0.19041.0.
+  -->
+</Project>
